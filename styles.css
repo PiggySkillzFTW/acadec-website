@@ -19,20 +19,21 @@ body {
   font-size: 32px;
 }
 
-ul {
+.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgba(0, 114, 213, 0.9);
+  width: 100%;
 }
 
-li {
+.navbar li {
   float: right;
   padding-right: 18px;
 }
 
-li a {
+.navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -40,10 +41,24 @@ li a {
   text-decoration: none;
   font-family: "Bradley Hand";
   letter-spacing: 3px;
+  position: relative;
+  z-index: 10;
 }
 
-li a:hover:not(.active) {
+.navbar li a:hover:not(.active) {
   background-color: rgba(0, 114, 213, 0.9);
+}
+
+@media (max-width: 700px) {
+
+  .navbar, ul, li {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
 }
 
 /* Subjects */
