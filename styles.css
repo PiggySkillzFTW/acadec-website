@@ -53,38 +53,7 @@ html, body {
   background-color: rgba(0, 114, 213, 0.9);
 }
 
-@media (max-width: 700px) {
-
-  .navbar, ul, li {
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-  }
-
-  .title {
-
-    left: 40%;
-    width: 300px;
-
-  }
-
-}
-
 /* Subjects */
-
-#accordion {
-  text-align: left;
-  top: 450px;
-  left: 50%;
-  width: 75%;
-  font-family: "Gill Sans";
-  position: fixed;
-  -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  overflow: auto;
-}
 
 .subjectheading {
 
@@ -100,7 +69,10 @@ html, body {
 .toggle-box {
     margin: 0 auto;
     width: 700px;
-    margin-top: 75px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+   transform: translate(-50%,0);
 }
 
 .toggle-box p {
@@ -149,6 +121,39 @@ html, body {
 
 }
 
+/* Media queries */
+
+@media (max-width: 700px) {
+
+  .navbar, ul, li {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .title {
+
+    left: 40%;
+    width: 300px;
+
+  }
+
+  .toggle-title {
+
+    width: 350px;
+    margin: 0 auto;
+
+  }
+
+  .toggle-content {
+
+    text-align: center;
+
+  }
+
+}
 
 /* 
 Homepage Animations
