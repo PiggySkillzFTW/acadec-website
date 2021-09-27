@@ -190,14 +190,15 @@ Homepage Animations
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adef', endColorstr='#0076e5',GradientType=1);
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0px auto;
   padding: 0px auto;
 }
 
 #container-inside {
   position: fixed;
-  width: 100%;
+  min-width: 960px;
+  max-width: 1280px;
   height: auto;
   min-height: 100%;
   margin: 0px auto;
