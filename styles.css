@@ -3,6 +3,7 @@ General Styles
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
 /* Homepage */
 
@@ -19,10 +20,8 @@ html, body {
   top: 45%;
   left: 60%;
   color: white;
-  letter-spacing: 10px;
-  text-align: center;
-  font-family: 'Yaldevi', sans-serif;
-  font-size: 32px;
+  font-family: 'Spartan', sans-serif;
+  font-size: 40px;
 }
 
 .navbar {
@@ -93,7 +92,7 @@ html, body {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    font-family: 'Yaldevi', sans-serif;
+    font-family: "Helvetica";
     font-size: 16px;
     letter-spacing: 2px;
 }
