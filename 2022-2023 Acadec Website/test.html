@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+		* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+	background-color: #2f2f2f;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  animation: blurred 2s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  transform: scale(1.05);
+}
+.d1 {
+  position: absolute;
+  background-image: url('testpic4.jpg');
+
+  height: 30vh;
+  width: 15vw;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  animation: dd1 5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 5px;
+}
+.d2 {
+  position: absolute;
+  background-image: url('testpic8.png');
+
+  height: 50vh;
+  width: 25vw;
+
+  background-position: -50vw 50%;
+  left: 10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd2 5s;
+  animation-delay: 1s;
+  border-radius: 5px;
+}
+.d3 {
+  position: absolute;
+  background-image: url('testpic.jpg');
+  overflow: hidden;
+
+  height: 95vh;
+  width: 40vw;
+  left: 25vw;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  background-position: -10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: dd3 5s;
+  animation-delay: 1s;
+  border-radius: 5px;
+}
+.d4 {
+  position: absolute;
+  overflow: hidden;
+  background-image: url('testpic2.jpg');
+
+  height: 80vh;
+  width: 25vw;
+  left: 60vw;
+  background-position: 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd4 5s;
+  animation-delay: 1s;
+  border-radius: 5px;
+}
+
+.frontpage p {
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	font-family: 'Spartan',sans-serif;
+	font-size: 40px;
+	animation: appear 2s;
+	animation-delay: 6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes dd1 {
+  from {
+  }
+  to {
+    width: 93vw;
+  }
+}
+
+@keyframes dd2 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-10vw - 100px) 50%;
+  }
+}
+@keyframes dd3 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-35vw - 1000px) 10%;
+  }
+}
+@keyframes dd4 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-10vw - 100px) 50%;
+  }
+}
+
+@keyframes blurred {
+	from {
+	}
+
+	to {
+		filter: blur(10px);
+	}
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+	</style>
+</head>
+<body>
+<div class="main">
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+</div>
+<div class="frontpage">
+	<p>acadec resource.</p>
+</div>
+</body>
+</html>
